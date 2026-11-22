@@ -169,7 +169,7 @@ function CelebrationStage() {
           <div className="voucher-foot">ditandatangani: kouu ✍️</div>
         </div>
         <p className="celebrate-sub">
-          tinggal nunjukin SS ini aja buat pake voucernya
+          tinggal nunjukin SS ini aja buat pake vouchernya
         </p>
       </div>
     </div>
