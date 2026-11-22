@@ -78,14 +78,17 @@ function LetterStage({ onNext }) {
         <p className="letter-to">hayoo aziii,</p>
         <div className="letter-body">
           <p>
-            eeee....jadi gini, pas tadi video call, aku malah ngomong yang
-            gaenakan soal <strong>"senderan sama tembok"</strong>.
+            eeee....aku tau aku lagi diambekin sama kamu dan aku ngerti banget
+            kenapanya, pas tadi video call, aku ga sengaja ngatain kamu
+            <strong>"senderan sama tembok"</strong>.
           </p>
-          <p>aku cuma bercanda doang asli🙏. maaf banget ya aziii.</p>
           <p>
-            aku ga bermaksud bikin kamu tersinggung sama sekali beneran deh,{" "}
-            <strong>ngobrol sama kamu tuh seruu</strong> makanya aku seneng tiap
-            kita video call.
+            saya mengatas namanya gading khairlambang ingin mengklarifikasi
+            bahwa aku cuma bercanda doang asli🙏. maaf banget ya aziii.
+          </p>
+          <p>
+            aku ga bermaksud bikin kamu tersinggung sama sekali beneran deh, dan{" "}
+            <strong>janji</strong> aku tidak akan melakukan itu lagi
           </p>
           <p>jadi jangan kapok video call lagi ya aziii.</p>
         </div>
@@ -159,13 +162,14 @@ function CelebrationStage() {
         <div className="voucher">
           <div className="voucher-head">🎟️ VOUCHER UNTUK AZI</div>
           <div className="voucher-body">
-            berlaku buat azi dan aku akan nurut apapun yang disuruh azi kapan
-            pun
+            berlaku buat video call bareng dan aku akan nurut apapun yang azi
+            suruh kapan pun
             <div>
               <small>(asal ngotak ya azii ehehehe)</small>
             </div>
             <strong>selamanya ♾️</strong>
           </div>
+
           <div className="voucher-foot">ditandatangani: kouu ✍️</div>
         </div>
         <p className="celebrate-sub">
