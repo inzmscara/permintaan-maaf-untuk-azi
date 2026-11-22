@@ -108,15 +108,14 @@ function LetterStage({ onNext }) {
 
 function ChoiceStage({ onForgive }) {
   const [noCount, setNoCount] = useState(0);
-  const gaveUp = noCount >= MAX_NO;
 
-  const yesScale = 1 + noCount * 0.22;
-  const noScale = Math.max(0.35, 1 - noCount * 0.18);
+  const yesScale = 1 + Math.min(noCount, 4) * 0.22;
+  const noScale = Math.max(0.35, 1 - Math.min(noCount, 4) * 0.18);
 
   return (
     <div className="stage stage-center">
       <h2 className="choice-title">jadi dimaafin kan azii?</h2>
-      {noCount > 0 && !gaveUp && (
+      {noCount > 0 && (
         <p className="plead" key={noCount}>
           {PLEADS[Math.min(noCount - 1, PLEADS.length - 1)]}
         </p>
@@ -129,17 +128,14 @@ function ChoiceStage({ onForgive }) {
         >
           maafin
         </button>
-        {!gaveUp && (
-          <button
-            className="btn btn-no"
-            style={{ transform: `scale(${noScale})` }}
-            onClick={() => setNoCount((c) => c + 1)}
-          >
-            ga mau
-          </button>
-        )}
+        <button
+          className="btn btn-no"
+          style={{ transform: `scale(${noScale})` }}
+          onClick={() => setNoCount((c) => c + 1)}
+        >
+          ga mau
+        </button>
       </div>
-      {gaveUp && <p className="plead">maafin aja yaa, janji nggak ngulang✌🏻</p>}
     </div>
   );
 }
